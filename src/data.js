@@ -1,7 +1,8 @@
 const newWater = [
   {
    'type': 'Free flowing local',
-   'description': 'premium quality ultra refined refreshment for your palate', 'flavor': 'none',
+   'description': 'premium quality ultra refined refreshment for your palate',
+   'flavor': 'none',
    'name': 'Tap Water',
    'imported': false,
    'countryOfOrigin': 'USA',

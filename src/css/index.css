@@ -72,6 +72,15 @@ h3	{
 	font-size: 3em;
 }
 
+h6 {
+  font-family: 'Serin Stencil', cursive;
+  font-size: 1em;
+}
+
+.info {
+  background-color: var(--light-blue);
+  padding: .5em;
+}
 
 
 dd {
@@ -105,7 +114,14 @@ nav {
   margin: auto;
 }
 
-nav h5:hover {
+a {
+  margin-top: 1em;
+  font-family: 'Merienda', cursive;
+  text-decoration: none;
+  color:  var(--dark-imperial-blue);
+}
+
+nav a:hover {
   color: ghostwhite;
 }
 
@@ -117,6 +133,8 @@ address {
 }
 
 .about main {
-  font-size: 1.5em;
+  font-size: 1.2em;
 	font-family: 'Serin Stencil', cursive;
+  padding: 2em;
+  text-align: justify;
 }
