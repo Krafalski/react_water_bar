@@ -1,6 +1,7 @@
 import React from 'react'
 // import './App.css'
 import data from '../data.js'
+import Water from './Water.js'
 
 
 class Menu extends React.Component {
@@ -13,22 +14,19 @@ class Menu extends React.Component {
   componentDidMount () {
     this.setState({waters: data})
   }
+
   render () {
     return (
-      <div className="menu">
+      <>
         <h3>Menu</h3>
-        <hr/>
-        {this.state.waters.map(water=> {
-          return(
-            <div key={water.id}>
-              <dl>
-                <dt>{water.brand}</dt>
-                <dd>{water.price}</dd>
-              </dl>
-            </div>
-          )
-        })}
-      </div>
+        <div className="menu">
+          {this.state.waters.map(water=> {
+            return(
+              <Water water={water} key={water.id}/>
+            )
+          })}
+        </div>
+      </>
     )
   }
 }
